@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "npx eslint .",
+    "publish-gh-pages": "node scripts/publish-gh-pages.js",
     "preview": "vite preview"
   },
   "devDependencies": {
