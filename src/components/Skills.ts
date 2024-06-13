@@ -1,30 +1,30 @@
 import { Skill } from '../types'
 import request, { ErrorResponse } from '@annybs/request-js'
 
-export default function Skills() {
-  interface State {
-    currentTag: string | null
-    skills: Skill[]
-    tags: string[]
-    visibleSkills: Skill[]
+export interface SkillsState {
+  currentTag: string | null
+  skills: Skill[]
+  tags: string[]
+  visibleSkills: Skill[]
 
-    init(): void
-    setCurrentTag(e: MouseEvent): void
-    tagClass(value: string): string
-  }
+  init(): void
+  setCurrentTag(e: MouseEvent): void
+  tagClass(value: string): string
+}
 
+export default function Skills(): SkillsState {
   function readCurrentTag() {
     const usp = new URLSearchParams(window.location.search)
     return usp.get('tag')
   }
 
-  function updateVisibleSkills(this: State) {
+  function updateVisibleSkills(this: SkillsState) {
     const tag = this.currentTag
     if (tag) this.visibleSkills = this.skills.filter(skill => skill.tags.includes(tag))
     else this.visibleSkills = this.skills
   }
 
-  const state: State = {
+  return {
     currentTag: null,
     skills: [],
     visibleSkills: [],
@@ -77,6 +77,4 @@ export default function Skills() {
       return 'tag'
     },
   }
-
-  return state
 }
