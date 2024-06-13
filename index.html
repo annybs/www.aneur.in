@@ -50,7 +50,7 @@
         </p>
       </section>
 
-      <section id="skills">
+      <section id="skills" x-data="skills">
         <header>
           <h2>Skills</h2>
         </header>
@@ -60,14 +60,24 @@
           If you have any questions, or something you need isn't on the list, <a href="#contact">get in touch</a> and I'd be happy to talk about it.
         </p>
 
-        <ul x-data="skills">
-          <template x-for="skill in skills">
+        <nav id="skills-tags" class="tags">
+          <template x-for="tag in tags" :key="tag">
+            <a x-bind:class="tagClass(tag)" x-on:click="setCurrentTag" x-text="tag" x-bind:href="`?tag=${tag}`" x-bind:data-tag="tag"></a>
+          </template>
+        </nav>
+
+        <ul id="skills-list">
+          <template x-for="skill in visibleSkills">
             <li>
-              <span class="name" x-text="skill.name"></span>
-              <span class="description" x-text="skill.description"></span>
+              <header>
+                <h3 x-text="skill.name"></h3>
+              </header>
+
+              <p class="description" x-text="skill.description"></p>
+
               <nav class="tags">
-                <template x-for="tag in skill.tags">
-                  <a x-text="tag" x-bind:href="`?tag=${tag}#skills`"></a>
+                <template x-for="tag in skill.tags" :key="tag">
+                  <a x-bind:class="tagClass(tag)" x-on:click="setCurrentTag" x-text="tag" x-bind:href="`?tag=${tag}#skills`" x-bind:data-tag="tag"></a>
                 </template>
               </nav>
             </li>

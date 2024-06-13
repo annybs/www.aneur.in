@@ -1,7 +1,8 @@
 [
   {
     "name": "Adobe Commerce (Magento 2)",
-    "tags": ["framework", "php", "js", "ecommerce"]
+    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "description": "I have delivered beautiful and powerful Magento websites for boutique and major retailers, often developing complex integrations with other platforms."
   },
   {
     "name": "Adobe Illustrator",
@@ -9,6 +10,286 @@
   },
   {
     "name": "Adobe Photoshop",
+    "tags": ["design"],
+    "description": "I have used Photoshop all my career to create assets for the web, including UI, imagery, and other promotional content."
+  },
+  {
+    "name": "Affinity Designer",
+    "tags": ["design"],
+    "description": "I use Designer to work with vector-based imagery and create icons."
+  },
+  {
+    "name": "Affinity Publisher",
     "tags": ["design"]
+  },
+  {
+    "name": "Agile",
+    "tags": ["knowledge"],
+    "description": "I am comfortable working in an agile environment."
+  },
+  {
+    "name": "Apache",
+    "tags": ["framework"],
+    "description": "I have set up many websites using PHP or JS using an Apache front proxy. I prefer nginx these days but Apache is easier to use in some respects."
+  },
+  {
+    "name": "ArangoDB",
+    "tags": ["database"],
+    "description": "ArangoDB is a fantastic NoSQL graph database which offers a very accessible and powerful query language, AQL. I have used it for many large-scale Node server applications."
+  },
+  {
+    "name": "Backend development",
+    "tags": ["knowledge"],
+    "description": "I have extensive backend engineering experience from building numerous server apps and integrations throughout my career."
+  },
+  {
+    "name": "BDD",
+    "tags": ["knowledge"]
+  },
+  {
+    "name": "Bitbucket",
+    "tags": ["operations", "platform"],
+    "description": "I have used Bitbucket for version control (git) and CI/CD via Pipelines. It integrates well with Jira, too."
+  },
+  {
+    "name": "Cassandra",
+    "tags": ["database"]
+  },
+  {
+    "name": "CI/CD",
+    "tags": ["operations", "knowledge"]
+  },
+  {
+    "name": "Confluence",
+    "tags": ["platform"]
+  },
+  {
+    "name": "CSS/SASS",
+    "tags": ["design", "language"],
+    "description": "I write native and semantic CSS/SASS like it's poetry."
+  },
+  {
+    "name": "Docker",
+    "tags": ["operations", "language", "platform"],
+    "description": "Containerization is a boon to any hardworking engineer that needs to run a bunch of different stuff without taking chances on their host OS. Docker works great in production, too."
+  },
+  {
+    "name": "Express",
+    "tags": ["js", "framework"],
+    "description": "Express provides a very developer-friendly web server that's easy to scale horizontally and extend."
+  },
+  {
+    "name": "Figma",
+    "tags": ["design"]
+  },
+  {
+    "name": "Frontend development",
+    "tags": ["knowledge"],
+    "description": "I am well-versed in past and present frontend and UX trends and try to keep up with all major frameworks, including React and Vue."
+  },
+  {
+    "name": "Full-stack development",
+    "tags": ["knowledge"],
+    "description": "I am adept at uniting frontend and backend development with accessible connectors and protocols."
+  },
+  {
+    "name": "git",
+    "tags": ["operations", "language"],
+    "description": "All development has been significantly easier ever since git joined my workflow. I work with greater confidence, knowing that I can always look to the past to guide the future."
+  },
+  {
+    "name": "GitHub",
+    "tags": ["operations", "platform"],
+    "description": "GitHub offers increasing value the more you use it, and its Actions are so easy to work with to enable CI/CD even for small projects. Always my first stop for hosted version control."
+  },
+  {
+    "name": "Go",
+    "tags": ["language"],
+    "description": "I adore Golang's simplicity - it makes networked applications quick to put together with minimal fuss and easy to understand when you revisit them again in the future."
+  },
+  {
+    "name": "Google Analytics",
+    "tags": ["platform"],
+    "description": "I have provided basic and custom Google Analytics integrations for many clients, enabling them to better understand and react to customer behaviours."
+  },
+  {
+    "name": "Google Docs/Drive",
+    "tags": ["office"],
+    "description": "Google offer a very competitive office suite which fits 95% of my use cases perfectly. It makes it easy to share documentation and resources with my clients, and collaborative editing works exceptionally well."
+  },
+  {
+    "name": "Grafana",
+    "tags": ["operations", "platform"],
+    "description": "I use Prometheus and Grafana to aggregate metrics from different applications and create useful visualisations of their availability, behaviour, and performance."
+  },
+  {
+    "name": "GraphQL",
+    "tags": ["language", "knowledge"],
+    "description": "I have worked with GraphQL in Magento and Uniswap integrations. It's not my preference of API for technical and cost/benefit reasons but when it works, it's very clever."
+  },
+  {
+    "name": "gRPC",
+    "tags": ["framework"]
+  },
+  {
+    "name": "HTML5/XHTML/XML",
+    "tags": ["language"],
+    "description": "HTML was my first web language, and it remains of critical importance for SEO and accessibility even in the era of web apps."
+  },
+  {
+    "name": "Ionic Framework",
+    "tags": ["js", "framework"],
+    "description": "I led a team of four developers building a Magento-based web app for a major retailer. Ionic was a strong choice to use off-the-shelf components and accelerate our wireframing."
+  },
+  {
+    "name": "JavaScript (ES6)",
+    "tags": ["js", "language"],
+    "description": "I am fluent in JavaScript, though I prefer to work in TypeScript wherever possible. It's a fine language for simple cases and offers much more power when augmented by type hints, especially in Intellisense."
+  },
+  {
+    "name": "Jenkins",
+    "tags": ["operations", "platform"],
+    "description": "I have managed Jenkins instances for clients which handle testing, building, and deploying applications and creating backups across their network."
+  },
+  {
+    "name": "Jira",
+    "tags": ["platform"],
+    "description": "Despite its complexity, Jira is a great tool for managing projects, particularly when its integrations are well-used."
+  },
+  {
+    "name": "Laravel",
+    "tags": ["php", "framework"]
+  },
+  {
+    "name": "LevelDB",
+    "tags": ["database"],
+    "description": "LevelDB is a nice, simple key-value store that makes it easy to whip up a self-contained application without using an external storage service. Its speed makes up for certain limitations such as single read and write."
+  },
+  {
+    "name": "LibreOffice",
+    "tags": ["office"]
+  },
+  {
+    "name": "MariaDB",
+    "tags": ["database"],
+    "description": "MariaDB is my go-to when I need a MySQL server for Magento or WordPress work."
+  },
+  {
+    "name": "MetaMask",
+    "tags": ["web3", "framework"]
+  },
+  {
+    "name": "Microsoft Office",
+    "tags": ["office"]
+  },
+  {
+    "name": "MongoDB",
+    "tags": ["js", "database"],
+    "description": "MongoDB works really well with Node.js applications, making the most of dynamic typing and offering a powerful declarative query API."
+  },
+  {
+    "name": "MySQL/SQL",
+    "tags": ["database"],
+    "description": "A popular choice for many applications in need of RDBMS. SQL can accomplish so much and so quickly when properly utilized."
+  },
+  {
+    "name": "New Relic",
+    "tags": ["operations", "platform"]
+  },
+  {
+    "name": "Next.js",
+    "tags": ["js", "framework"]
+  },
+  {
+    "name": "nginx",
+    "tags": ["framework"],
+    "description": "A very elegant and efficient HTTP server which I favour for most applications, particularly when combined with automatic SSL certificate issuance."
+  },
+  {
+    "name": "Node-RED",
+    "tags": ["operations", "language"]
+  },
+  {
+    "name": "Node.js",
+    "tags": ["js", "language"],
+    "description": "I am a Node aficionado and I try to make the most of the expansive standard library, but when deadlines loom, there's a million packages on npm to speed things up a bit."
+  },
+  {
+    "name": "PHP",
+    "tags": ["php", "language"],
+    "description": "I have been with PHP since version 5.6. While it hasn't completely shaken off its past, modern versions are much more approachable with better typing features and strong, structured OOP capabilities."
+  },
+  {
+    "name": "Prometheus",
+    "tags": ["operations", "platform"],
+    "description": "I use Prometheus and Grafana to aggregate metrics from different applications and create useful visualisations of their availability, behaviour, and performance."
+  },
+  {
+    "name": "React",
+    "tags": ["js", "framework"],
+    "description": "Functional React is a brilliant way to build complex web apps with interlocking functionality. Hooks make it easy to separate concerns by isolating internal logic from the UX."
+  },
+  {
+    "name": "REST API",
+    "tags": ["knowledge"]
+  },
+  {
+    "name": "SOAP",
+    "tags": ["framework"]
+  },
+  {
+    "name": "Shell",
+    "tags": ["operations", "language"],
+    "description": "I use a terminal every day in the course of my work, whether on my own system or in a remote SSH session. My hands-on experience managing servers supports my ability to implement CI/CD."
+  },
+  {
+    "name": "Sketch",
+    "tags": ["design"]
+  },
+  {
+    "name": "Solidity",
+    "tags": ["web3", "language"]
+  },
+  {
+    "name": "Strangler pattern",
+    "tags": ["knowledge"]
+  },
+  {
+    "name": "Tailwind CSS",
+    "tags": ["framework"],
+    "description": "While I prefer to write my own (poetic) CSS for my own projects, Tailwind provides cohesion and compartmentalisation of styles - a benefit to larger teams and busy projects with high code turnover."
+  },
+  {
+    "name": "TDD",
+    "tags": ["knowledge"]
+  },
+  {
+    "name": "TypeScript",
+    "tags": ["js", "language"],
+    "description": "TypeScript is the perfect solution for code correctness in JavaScript apps. It has enabled me to build things of vastly greater scope and complexity without losing track of the flow of data."
+  },
+  {
+    "name": "Umami [Analytics]",
+    "tags": ["platform"]
+  },
+  {
+    "name": "Vue.js",
+    "tags": ["js", "framework"]
+  },
+  {
+    "name": "WebSockets",
+    "tags": ["js", "framework", "language"]
+  },
+  {
+    "name": "web3.js",
+    "tags": ["js", "framework"]
+  },
+  {
+    "name": "WooCommerce",
+    "tags": ["php", "js", "ecommerce", "framework", "platform"]
+  },
+  {
+    "name": "WordPress",
+    "tags": ["php", "js", "ecommerce", "framework", "platform"]
   }
 ]
