@@ -2,12 +2,126 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Aneurin Barker Snook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <section id="top">
+        <header>
+          <h1>Aneurin Barker Snook</h1>
+        </header>
+
+        <p>
+          Software engineer extraordinaire.
+          Current availability: <span class="availability">limited</span>
+        </p>
+      </section>
+
+      <section id="services">
+        <header>
+          <h2>Services</h2>
+        </header>
+
+        <p>
+          I specialise in full-stack software development, and I also offer a vast breadth of skills
+          and knowledge in many aspects of business and operations.
+        </p>
+
+        <ul>
+          <li>Software architecture and implementation</li>
+          <li>Software integrations and API design</li>
+          <li>Infrastructure, methodology and documentation</li>
+          <li>Web UI/UX design and implementation</li>
+          <li>Code review, debugging, and profiling</li>
+          <li>Security audits</li>
+          <li>Legacy platform maintenance and migration</li>
+          <li>Requirements gathering, stakeholder engagement, and R&D</li>
+          <li>Technical leadership and mentoring</li>
+          <li>Consulting</li>
+        </ul>
+
+        <p>
+          I am always open to new challenges. <a href="#contact">Send me a message</a> to let me know what I can help you with.
+        </p>
+      </section>
+
+      <section id="skills">
+        <header>
+          <h2>Skills</h2>
+        </header>
+
+        <p>
+          Are you looking for expertise in a specific domain? This list provides an overview of pretty much everything I know.
+          If you have any questions, or something you need isn't on the list, <a href="#contact">get in touch</a> and I'd be happy to talk about it.
+        </p>
+
+        <ul x-data="skills">
+          <template x-for="skill in skills">
+            <li>
+              <span class="name" x-text="skill.name"></span>
+              <span class="description" x-text="skill.description"></span>
+              <nav class="tags">
+                <template x-for="tag in skill.tags">
+                  <a x-text="tag" x-bind:href="`?tag=${tag}#skills`"></a>
+                </template>
+              </nav>
+            </li>
+          </template>
+        </ul>
+      </section>
+
+      <section id="pricing">
+        <header>
+          <h2>Pricing</h2>
+        </header>
+
+        <p>
+          I offer two standard rates on a contract or ad-hoc basis:
+        </p>
+
+        <ul>
+          <li>£300 per day (7.5 hours) in increments of half a day</li>
+          <li>£45 per hour in increments of one hour</li>
+        </ul>
+
+        <p>
+          You can choose one of these according to your needs when booking me for work.
+          I may also be able to offer fixed pricing for a complete project, subject to a discovery phase to define your requirements.
+          This may be chargeable depending on the time needed. In some cases,
+          I can also offer an SLA on retainer to ensure my availability to you.
+        </p>
+
+        <p>
+          If you are a charitable organisation, I would love to work with you and can offer a reduced rate to suit your budgetary
+          requirements. <a href="#contact">Get in touch</a> to discuss what you need from me.
+        </p>
+      </section>
+
+      <section id="contact">
+        <header>
+          <h2>Contact</h2>
+        </header>
+
+        <p x-data="{ email: 'a@aneur.in' }">
+          The best way to reach me is by email.
+          Send a message to <a x-bind:href="`mailto:${email}`" x-text="email"></a> summarising what you're looking for—or just to say hello!
+        </p>
+
+        <p>
+          You can aso find me on these platforms:
+        </p>
+
+        <ul>
+          <li>GitHub <a href="https://github.com/annybs/" target="_blank">github.com/annybs</a>
+          <li>LinkedIn <a href="https://www.linkedin.com/in/aneurinbs/" target="_blank">linkedin.com/in/aneurinbs</a>
+        </ul>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

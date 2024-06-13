@@ -1,0 +1,79 @@
+:root {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-size: 12pt;
+
+  --bg-color: #e9e9e9;
+  --cta-color: #e24350;
+  --fg-color: #333333;
+}
+
+html, body {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+
+  padding: 0;
+  margin: 0;
+}
+
+@mixin link($color: var(--cta-color)) {
+  border-bottom: 0.2em solid $color;
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin link-hover {
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-color: var(--bg-color);
+  }
+}
+
+a {
+  @include link;
+  @include link-hover;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 1rem 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style-position: inside;
+  list-style-type: square;
+  padding: 0;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+#top {
+  .availability {
+    @include link;
+    text-transform: uppercase;
+  }
+}
