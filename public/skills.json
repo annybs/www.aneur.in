@@ -29,7 +29,8 @@
   },
   {
     "name": "Alpine.js",
-    "tags": ["js", "framework"]
+    "tags": ["js", "framework"],
+    "description": "A recent discovery that I find makes it very easy to build simple websites, like this one, without huge amounts of reactive boilerplate. I look forward to getting to know it better."
   },
   {
     "name": "Apache",
@@ -39,7 +40,7 @@
   {
     "name": "ArangoDB",
     "tags": ["database"],
-    "description": "ArangoDB is a fantastic NoSQL graph database which offers a very accessible and powerful query language, AQL. I have used it for many large-scale Node server applications."
+    "description": "ArangoDB is a fantastic NoSQL graph database which offers a very accessible and powerful query language, AQL. I have used it for many large-scale Node server apps."
   },
   {
     "name": "Backend development",
@@ -48,7 +49,8 @@
   },
   {
     "name": "BDD",
-    "tags": ["knowledge"]
+    "tags": ["knowledge"],
+    "description": "My experence working in a fast-paced retail environment taught me that goals are always shifting, and it's vital to be able to respond to evolving requirements as your business grows with your software."
   },
   {
     "name": "Bitbucket",
@@ -57,20 +59,23 @@
   },
   {
     "name": "Cassandra",
-    "tags": ["database"]
+    "tags": ["database"],
+    "description": "A clever solution for storing data at scale when you have a clear understanding of the queries you will use."
   },
   {
     "name": "CI/CD",
-    "tags": ["operations", "knowledge"]
+    "tags": ["operations", "knowledge"],
+    "description": "I try as much as possible to automate repetitive processes, including testing software, building and deploying it, creating backups etc. A well-organised CI/CD app can also help to visualise the reach of your operations."
   },
   {
     "name": "Confluence",
-    "tags": ["platform"]
+    "tags": ["platform"],
+    "description": "Confluence integrates well with Jira and Bitbucket, and does a satisfactory job as an information hub if carefully organised."
   },
   {
     "name": "CSS/SASS",
     "tags": ["design", "language"],
-    "description": "I write native and semantic CSS/SASS like it's poetry."
+    "description": "I write native and semantic CSS/SASS like poetry. I thrive in the intersection of style, content, and function."
   },
   {
     "name": "Docker",
@@ -84,7 +89,8 @@
   },
   {
     "name": "Figma",
-    "tags": ["design"]
+    "tags": ["design"],
+    "description": "Figma is a great design tool that makes it trivial for designers to share assets I can immediately isolate and embed into the software I'm working on."
   },
   {
     "name": "Frontend development",
@@ -109,7 +115,7 @@
   {
     "name": "Go",
     "tags": ["language"],
-    "description": "I adore Golang's simplicity - it makes networked applications quick to put together with minimal fuss and easy to understand when you revisit them again in the future."
+    "description": "I adore Golang's simplicity - it makes networked apps quick to put together with minimal fuss and easy to understand when you revisit them again in the future."
   },
   {
     "name": "Google Analytics",
@@ -124,7 +130,7 @@
   {
     "name": "Grafana",
     "tags": ["operations", "platform"],
-    "description": "I use Prometheus and Grafana to aggregate metrics from different applications and create useful visualisations of their availability, behaviour, and performance."
+    "description": "I use Prometheus and Grafana to aggregate metrics from different apps and create useful visualisations of their availability, behaviour, and performance."
   },
   {
     "name": "GraphQL",
@@ -133,7 +139,8 @@
   },
   {
     "name": "gRPC",
-    "tags": ["framework"]
+    "tags": ["framework"],
+    "description": "While I favour WebSocket or REST APIs in most cases, gRPC can be a good option for coupled connectivity in mature apps with a well-defined protocol."
   },
   {
     "name": "HTML5/XHTML/XML",
@@ -153,7 +160,7 @@
   {
     "name": "Jenkins",
     "tags": ["operations", "platform"],
-    "description": "I have managed Jenkins instances for clients which handle testing, building, and deploying applications and creating backups across their network."
+    "description": "I have managed Jenkins instances for clients which handle testing, building, and deploying apps and creating backups across their network."
   },
   {
     "name": "Jira",
@@ -162,43 +169,48 @@
   },
   {
     "name": "Laravel",
-    "tags": ["php", "framework"]
+    "tags": ["php", "framework"],
+    "description": "This framework's clever use of PHP magic methods makes it elegant without becoming overly restrictive. Laravel has remained a competitive option while other frameworks have risen and fallen."
   },
   {
     "name": "LevelDB",
     "tags": ["database"],
-    "description": "LevelDB is a nice, simple key-value store that makes it easy to whip up a self-contained application without using an external storage service. Its speed makes up for certain limitations such as single read and write."
+    "description": "LevelDB is a nice, simple key-value store that makes it easy to whip up a self-contained app without using an external storage service. Its speed makes up for certain limitations such as single read and write."
   },
   {
-    "name": "LibreOffice",
-    "tags": ["office"]
+    "name": "LibreOffice (OpenOffice)",
+    "tags": ["office"],
+    "description": "When Microsoft Office isn't available, or heaven forfend isn't working, LibreOffice fills the gap perfectly well and has a few tricks of its own. It's always good to have a backup plan."
   },
   {
     "name": "MariaDB",
     "tags": ["database"],
-    "description": "MariaDB is my go-to when I need a MySQL server for Magento or WordPress work."
+    "description": "MariaDB is my go-to when I need a MySQL server for Magento or WordPress work. It's easy to set up, particularly in a Docker-enabled environment."
   },
   {
     "name": "MetaMask",
-    "tags": ["web3", "framework"]
+    "tags": ["web3", "framework"],
+    "description": "I have integrated with MetaMask to facilitate currency exchanges on the Ethereum network."
   },
   {
     "name": "Microsoft Office",
-    "tags": ["office"]
+    "tags": ["office"],
+    "description": "Word, Excel, Powerpoint - we've all used them at some point, and sometimes even the more niche apps."
   },
   {
     "name": "MongoDB",
     "tags": ["js", "database"],
-    "description": "MongoDB works really well with Node.js applications, making the most of dynamic typing and offering a powerful declarative query API."
+    "description": "MongoDB works really well with Node.js apps, making the most of dynamic typing and offering a powerful declarative query API."
   },
   {
     "name": "MySQL/SQL",
     "tags": ["database"],
-    "description": "A popular choice for many applications in need of RDBMS. SQL can accomplish so much and so quickly when properly utilized."
+    "description": "A popular choice for many apps in need of RDBMS. SQL can accomplish so much and so quickly when properly utilized."
   },
   {
     "name": "New Relic",
-    "tags": ["operations", "platform"]
+    "tags": ["operations", "platform"],
+    "description": "New Relic is a multifacted platform I haven't had full opportunity to explore, but it has been incredibly useful to capture and visualise logging across apps, making it easier to monitor and respond to issues particularly in a distributed network."
   },
   {
     "name": "Next.js",
@@ -207,26 +219,27 @@
   {
     "name": "nginx",
     "tags": ["framework"],
-    "description": "A very elegant and efficient HTTP server which I favour for most applications, particularly when combined with automatic SSL certificate issuance."
+    "description": "A very elegant and efficient HTTP server which I favour for most apps, particularly when combined with automatic SSL certificate issuance."
   },
   {
     "name": "Node-RED",
-    "tags": ["operations", "language"]
+    "tags": ["operations", "language"],
+    "description": "I have used Node-RED create integrations and functionality which may need to be accessible to non-technical users. The drag-and-drop interface works really well, and it's easy to create your own plugins if the extensive plugin library doesn't have everything you need."
   },
   {
     "name": "Node.js",
     "tags": ["js", "language"],
-    "description": "I am a Node aficionado and I try to make the most of the expansive standard library, but when deadlines loom, there's a million packages on npm to speed things up a bit."
+    "description": "I am a Node aficionado and I try to make the most of the expansive standard library, but when deadlines loom, there's a million packages on npm to speed things up a bit. Node apps are one of the quickest ways to get off the ground, particularly when transpiling from TypeScript."
   },
   {
     "name": "PHP",
     "tags": ["php", "language"],
-    "description": "I have been with PHP since version 5.6. While it hasn't completely shaken off its past, modern versions are much more approachable with better typing features and strong, structured OOP capabilities."
+    "description": "I have been with PHP since version 5.6 many years ago. While it hasn't completely shaken off its past, modern versions are much more approachable with better typing features and strong, structured OOP capabilities."
   },
   {
     "name": "Prometheus",
     "tags": ["operations", "platform"],
-    "description": "I use Prometheus and Grafana to aggregate metrics from different applications and create useful visualisations of their availability, behaviour, and performance."
+    "description": "I use Prometheus and Grafana to aggregate metrics from different apps and create useful visualisations of their availability, behaviour, and performance."
   },
   {
     "name": "React",
@@ -235,11 +248,13 @@
   },
   {
     "name": "REST API",
-    "tags": ["knowledge"]
+    "tags": ["knowledge"],
+    "description": "Sometimes you just can't beat a straightforward HTTP request to get the data you need, and well-formed REST APIs offer familiar conventions that make full use of the HTTP protocol and receive attendant benefits."
   },
   {
     "name": "SOAP",
-    "tags": ["framework"]
+    "tags": ["framework"],
+    "description": "No longer the preeminent message format for integrated web services, but still useful to know, particularly when integrating particularly deep-set systems in industry and commerce."
   },
   {
     "name": "Shell",
@@ -252,20 +267,23 @@
   },
   {
     "name": "Solidity",
-    "tags": ["web3", "language"]
+    "tags": ["web3", "language"],
+    "description": "I have reviewed and supported Solidity-based smart contracts for the Ethereum network."
   },
   {
     "name": "Strangler pattern",
-    "tags": ["knowledge"]
+    "tags": ["knowledge"],
+    "description": "Businesses are made up of many moving parts, and sometimes parts need to be replaced. Software has to be able to follow suit, be it through interfaces and abstraction or the use of microservices. I can help make this happen."
   },
   {
     "name": "Tailwind CSS",
     "tags": ["framework"],
-    "description": "While I prefer to write my own (poetic) CSS for my own projects, Tailwind provides cohesion and compartmentalisation of styles - a benefit to larger teams and busy projects with high code turnover."
+    "description": "As much as I like to roll out my own CSS tailored for purpose, it can get out of control in larger teams and busy projects with high code turnover, particularly when following BDD. Tailwind provides cohesion and compartmentalisation of styles without sacrificing flexibility."
   },
   {
     "name": "TDD",
-    "tags": ["knowledge"]
+    "tags": ["knowledge"],
+    "description": "Tests are crucial to the correctness of all software. I am adept at writing full-coverage unit tests and designing integration tests. Test-driven development is a good fit for businesses that have a particular need for robustness and a clear vision for their software implementation."
   },
   {
     "name": "TypeScript",
@@ -274,15 +292,18 @@
   },
   {
     "name": "Umami [Analytics]",
-    "tags": ["platform"]
+    "tags": ["platform"],
+    "description": "Sometimes, often for privacy reasons, Google Analytics isn't the right choice for your organisation, but that doesn't mean you have to miss out on analytics. Umami is a strong, responsible, and open-source option for understanding your users' behaviour."
   },
   {
     "name": "Vue.js",
-    "tags": ["js", "framework"]
+    "tags": ["js", "framework"],
+    "description": "I have built numerous frontend applications in Vue 2 and 3. It is particularly enjoyable to create Vue SFCs since the introduction of Composition API and improvements in TypeScript support."
   },
   {
     "name": "WebSockets",
-    "tags": ["js", "framework", "language"]
+    "tags": ["js", "framework", "language"],
+    "description": "WebSockets make it wonderfully simple to create real-time data streams between a server and its client, particularly in the browser."
   },
   {
     "name": "web3.js",
