@@ -1,17 +1,15 @@
 {
   "name": "www.aneur.in",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "npx eslint .",
-    "publish-gh-pages": "node scripts/publish-gh-pages.js",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@types/alpinejs": "^3.13.10",
-    "gh-pages": "^6.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   },
