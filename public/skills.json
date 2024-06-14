@@ -28,6 +28,10 @@
     "description": "I am comfortable working in an agile environment."
   },
   {
+    "name": "Alpine.js",
+    "tags": ["js", "framework"]
+  },
+  {
     "name": "Apache",
     "tags": ["framework"],
     "description": "I have set up many websites using PHP or JS using an Apache front proxy. I prefer nginx these days but Apache is easier to use in some respects."
