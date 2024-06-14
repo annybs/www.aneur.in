@@ -3,7 +3,7 @@ export interface ContactState {
 }
 
 export default function Contact(): ContactState {
-  const email = 'ni.ruena@a'.split('').reverse().join('')
+  const email = 'ni.ruena@olleh'.split('').reverse().join('')
 
   return {
     email,
