@@ -29,6 +29,8 @@ jobs:
 
       - name: Build statics
         run: npm run build
+        env:
+          VITE_ANALYTICS_WEBSITE_ID: ${{ vars.ANALYTICS_WEBSITE_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

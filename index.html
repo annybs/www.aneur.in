@@ -133,5 +133,10 @@
       </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
+    <div x-data="analytics">
+      <template x-if="scriptUrl && websiteId">
+        <script defer x-bind:src="scriptUrl" x-bind:data-website-id="websiteId"></script>
+      </template>
+    </div>
   </body>
 </html>
