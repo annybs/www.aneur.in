@@ -90,6 +90,12 @@ main {
 }
 
 #top {
+  .description {
+    font-style: italic;
+  }
+}
+
+#availability {
   .availability {
     @include link;
     text-transform: uppercase;

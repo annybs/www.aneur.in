@@ -16,10 +16,7 @@
           <h1>Aneurin Barker Snook</h1>
         </header>
 
-        <p>
-          Software engineer extraordinaire.
-          Current availability: <span class="availability">limited</span>
-        </p>
+        <p class="description">Software engineer extraordinaire</p>
       </section>
 
       <section id="services">
@@ -112,6 +109,25 @@
         </p>
       </section>
 
+      <section id="availability">
+        <header>
+          <h2>Availability</h2>
+        </header>
+
+        <p>
+          I am currently offering <span class="availability">limited availability</span> to work.
+        </p>
+
+        <p>
+          I have a fully-equipped private office and favour remote working.
+          I am able to join captioned video calls or discuss your needs by email or instant messaging.
+        </p>
+
+        <p>
+          if you would like to see me in person, I am based in Nottingham (UK) and willing to travel, within reason, for meetings or hybrid working.
+        </p>
+      </section>
+
       <section id="contact">
         <header>
           <h2>Contact</h2>
@@ -120,6 +136,7 @@
         <p x-data="contact">
           The best way to reach me is by email.
           Send a message to <a x-bind:href="`mailto:${email}`" x-text="email"></a> summarising what you're looking for—or just to say hello!
+          I look forward to hearing from you.
         </p>
 
         <p>
