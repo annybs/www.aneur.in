@@ -2,14 +2,33 @@ $bp-tablet: 600px;
 $bp-desktop: 900px;
 $bp-super: 1200px;
 
-:root {
-  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-  font-size: 12pt;
+$link-border-width: 0.2rem;
 
+@mixin prefer-light {
   --bg-color: #e9e9e9;
   --border-color: #ccc;
   --cta-color: #e24350;
   --fg-color: #333333;
+  --tag-bg-color: #e9e9e9;
+}
+
+@mixin prefer-dark {
+  --bg-color: #333333;
+  --border-color: #999;
+  --cta-color: #e24350;
+  --fg-color: #e9e9e9;
+  --tag-bg-color: #e9e9e9;
+}
+
+:root {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-size: 12pt;
+
+  @include prefer-light;
+
+  @media (prefers-color-scheme: dark) {
+    @include prefer-dark;
+  }
 }
 
 html,
@@ -19,10 +38,18 @@ body {
 
   padding: 0;
   margin: 0;
+
+  .color-light {
+    @include prefer-light;
+  }
+
+  .color-dark {
+    @include prefer-dark;
+  }
 }
 
 @mixin link($color: var(--cta-color)) {
-  border-bottom: 0.2em solid $color;
+  border-bottom: $link-border-width solid $color;
   color: $color;
   text-decoration: none;
 }
@@ -43,7 +70,7 @@ a {
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1.4em;
   margin: 0;
   padding: 0;
 }
@@ -82,23 +109,30 @@ li {
   line-height: 1.5rem;
 }
 
+.cta {
+  color: var(--cta-color);
+  text-transform: uppercase;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 2rem;
+  padding: 2rem;
 }
 
 #top {
+  header h1 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $bp-desktop) {
+      display: initial;
+    }
+  }
+
   .description {
     font-style: italic;
-  }
-}
-
-#availability {
-  .availability {
-    @include link;
-    text-transform: uppercase;
   }
 }
 
@@ -108,6 +142,9 @@ main {
   }
 
   .tags {
+    $ph: 0.4rem;
+    $pv: 0.2rem;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,18 +154,20 @@ main {
       border-radius: 0.3rem;
       border-width: 0;
       display: inline-block;
-      padding: 0.1rem 0.4rem;
+      padding: $pv $ph;
     }
 
     @mixin tag($bg, $fg) {
       background-color: $bg;
+      border-color: $bg;
       color: $fg;
 
       &.active {
-        background-color: var(--bg-color);
-        border-bottom: 0.2rem solid $bg;
-        border-radius: 0;
-        color: $bg;
+        @include link($bg);
+        background-color: var(--tag-bg-color);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-bottom: $pv - $link-border-width;
       }
     }
 
@@ -153,7 +192,7 @@ main {
     }
 
     [data-tag="knowledge"] {
-      @include tag(grey, black);
+      @include tag(salmon, black);
     }
 
     [data-tag="language"] {
@@ -165,23 +204,19 @@ main {
     }
 
     [data-tag="operations"] {
-      @include tag(sienna, white);
+      @include tag(orangered, white);
     }
 
     [data-tag="php"] {
-      @include tag(purple, white);
-    }
-
-    [data-tag="platform"] {
       @include tag(indigo, white);
     }
 
-    [data-tag="web3"] {
-      @include tag(black, white);
+    [data-tag="platform"] {
+      @include tag(cornflowerblue, white);
     }
 
-    .tag.active {
-      font-style: italic;
+    [data-tag="web3"] {
+      @include tag(darkslategray, white);
     }
   }
 
@@ -213,6 +248,27 @@ main {
     .tags {
       font-size: 0.8rem;
       padding: 0.1rem 0.2rem;
+    }
+  }
+}
+
+#color {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  button {
+    background: none;
+    border: none;
+    color: var(--fg-color);
+    cursor: pointer;
+    display: block;
+
+    svg {
+      display: block;
+      fill: var(--fg-color);
+      height: 100%;
+      width: 2rem;
     }
   }
 }

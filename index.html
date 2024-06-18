@@ -13,7 +13,10 @@
     <main>
       <section id="top">
         <header>
-          <h1>Aneurin Barker Snook</h1>
+          <h1>
+            <span>Aneurin</span>
+            <span>Barker Snook</span>
+          </h1>
         </header>
 
         <p class="description">Software engineer extraordinaire</p>
@@ -115,7 +118,7 @@
         </header>
 
         <p>
-          I am currently offering <span class="availability">limited availability</span> to work.
+          I am currently offering <span class="cta">limited availability</span> to work.
         </p>
 
         <p>
@@ -149,11 +152,36 @@
         </ul>
       </section>
     </main>
-    <script type="module" src="/src/main.ts"></script>
+
+    <div x-data="color" id="color">
+      <button x-on:click="rotateColorScheme">
+        <template x-if="currentScheme === 'auto'">
+          <!-- clock @ https://heroicons.com/mini -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z" clip-rule="evenodd" />
+          </svg>
+        </template>
+        <template x-if="currentScheme === 'light'">
+          <!-- sun @ https://heroicons.com/mini -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <path d="M10 2a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 2ZM10 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 15ZM10 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM15.657 5.404a.75.75 0 1 0-1.06-1.06l-1.061 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM6.464 14.596a.75.75 0 1 0-1.06-1.06l-1.06 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM18 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 18 10ZM5 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 5 10ZM14.596 15.657a.75.75 0 0 0 1.06-1.06l-1.06-1.061a.75.75 0 1 0-1.06 1.06l1.06 1.06ZM5.404 6.464a.75.75 0 0 0 1.06-1.06l-1.06-1.06a.75.75 0 1 0-1.061 1.06l1.06 1.06Z" />
+          </svg>
+        </template>
+        <template x-if="currentScheme === 'dark'">
+          <!-- moon @ https://heroicons.com/mini -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <path fill-rule="evenodd" d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z" clip-rule="evenodd" />
+          </svg>
+        </template>
+      </button>
+    </div>
+
     <div x-data="analytics">
       <template x-if="scriptUrl && websiteId">
         <script defer x-bind:src="scriptUrl" x-bind:data-website-id="websiteId"></script>
       </template>
     </div>
+
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
