@@ -52,16 +52,15 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  # # https://github.com/annybs/notify-discord
-  # notify:
-  #   name: Notify Discord
-  #   uses: annybs/notify-discord@develop
-  #   needs: deploy
-  #   if: ${{ always() }}
-  #   with:
-  #     discord-webhook: ${{ secrets.DISCORD_WEBHOOK }}
-  #     repository: ${{ github.repository }}
-  #     result: ${{ needs.deploy.result }}
-  #     run_id: ${{ github.run_id }}
-  #     run_number: ${{ github.run_number }}
-  #     workflow: ${{ github.workflow }}
+  notify:
+    name: Send Discord workflow notification
+    uses: annybs/action-notify-discord@v1
+    needs: deploy
+    if: ${{ always() }}
+    with:
+      repository: ${{ github.repository }}
+      result: ${{ needs.deploy.result }}
+      run-id: ${{ github.run_id }}
+      run-number: ${{ github.run_number }}
+      webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
+      workflow: ${{ github.workflow }}
