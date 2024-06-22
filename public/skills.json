@@ -110,7 +110,7 @@
   {
     "name": "Go",
     "tags": ["language"],
-    "description": "I adore Golang's simplicity - it makes networked apps quick to put together with minimal fuss and easy to understand when you revisit them again in the future."
+    "description": "I adore Golang's simplicity - it makes networked apps quick to put together with minimal fuss, and easy to understand when you revisit them again in the future."
   },
   {
     "name": "Google Analytics",
@@ -188,6 +188,10 @@
     "description": "MariaDB is my go-to when I need a MySQL server for Magento or WordPress work. It's easy to set up, particularly in a Docker-enabled environment."
   },
   {
+    "name": "Markdown",
+    "tags": ["language"]
+  },
+  {
     "name": "MetaMask",
     "tags": ["web3", "framework"],
     "description": "I have integrated with MetaMask to facilitate currency exchanges on the Ethereum network."
@@ -224,7 +228,7 @@
   {
     "name": "Node-RED",
     "tags": ["operations", "language"],
-    "description": "I have used Node-RED create integrations and functionality which may need to be accessible to non-technical users. The drag-and-drop interface works really well, and it's easy to create your own plugins if the extensive plugin library doesn't have everything you need."
+    "description": "I have used Node-RED to create integrations and functionality which may need to be accessible to non-technical users. The drag-and-drop interface works really well, and it's easy to create your own plugins if the extensive plugin library doesn't have everything you need."
   },
   {
     "name": "Node.js",
