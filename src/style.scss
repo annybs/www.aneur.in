@@ -8,6 +8,7 @@ $link-border-width: 0.2rem;
   --bg-color: #e9e9e9;
   --border-color: #ccc;
   --cta-color: #e24350;
+  --cta-fg-color: #e9e9e9;
   --fg-color: #333333;
   --tag-bg-color: #e9e9e9;
 }
@@ -16,6 +17,7 @@ $link-border-width: 0.2rem;
   --bg-color: #333333;
   --border-color: #999;
   --cta-color: #e24350;
+  --cta-fg-color: #e9e9e9;
   --fg-color: #e9e9e9;
   --tag-bg-color: #e9e9e9;
 }
@@ -137,121 +139,87 @@ main {
 }
 
 #skills {
-  #skills-tags {
-    margin-top: 2rem;
-  }
+  .data-view {
+    .filter {
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.2rem 0.4rem;
+      }
+    }
 
-  .tags {
-    $ph: 0.4rem;
-    $pv: 0.2rem;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    .tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
 
     .tag {
       border-radius: 0.3rem;
       border-width: 0;
-      display: inline-block;
-      padding: $pv $ph;
-    }
-
-    @mixin tag($bg, $fg) {
-      background-color: $bg;
-      border-color: $bg;
-      color: $fg;
+      padding: 0.2rem 0.4rem;
 
       &.active {
-        @include link($bg);
-        background-color: var(--tag-bg-color);
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        padding-bottom: $pv - $link-border-width;
+        background-color: var(--cta-color);
+        color: var(--cta-fg-color);
       }
     }
 
-    [data-tag="database"] {
-      @include tag(red, white);
+    .data {
+      border-bottom: solid 0.2rem var(--border-color);
+      border-top: solid 0.2rem var(--border-color);
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      list-style: none;
+      padding: 2rem 0;
+
+      @media screen and (min-width: $bp-tablet) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media screen and (min-width: $bp-super) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .description {
+        font-size: 0.8rem;
+      }
+
+      .tags {
+        font-size: 0.8rem;
+        padding: 0.1rem 0.2rem;
+      }
     }
 
-    [data-tag="design"] {
-      @include tag(darkgreen, white);
-    }
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
 
-    [data-tag="ecommerce"] {
-      @include tag(orange, black);
-    }
+      .filter {
+        flex-direction: column;
+        margin: 1rem 0;
 
-    [data-tag="framework"] {
-      @include tag(teal, white);
-    }
+        header {
+          display: initial;
+          padding: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
 
-    [data-tag="js"] {
-      @include tag(green, white);
-    }
-
-    [data-tag="knowledge"] {
-      @include tag(salmon, black);
-    }
-
-    [data-tag="language"] {
-      @include tag(navy, white);
-    }
-
-    [data-tag="office"] {
-      @include tag(maroon, white);
-    }
-
-    [data-tag="operations"] {
-      @include tag(orangered, white);
-    }
-
-    [data-tag="payments"] {
-      @include tag(orchid, black);
-    }
-
-    [data-tag="php"] {
-      @include tag(indigo, white);
-    }
-
-    [data-tag="platform"] {
-      @include tag(cornflowerblue, white);
-    }
-
-    [data-tag="web3"] {
-      @include tag(darkslategray, white);
-    }
-  }
-
-  #skills-list {
-    border-bottom: solid 0.2rem var(--border-color);
-    border-top: solid 0.2rem var(--border-color);
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr;
-    list-style: none;
-    padding: 2rem 0;
-
-    @media screen and (min-width: $bp-tablet) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media screen and (min-width: $bp-desktop) {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media screen and (min-width: $bp-super) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .description {
-      font-size: 0.8rem;
-    }
-
-    .tags {
-      font-size: 0.8rem;
-      padding: 0.1rem 0.2rem;
+      .data {
+        border-bottom-width: 0;
+        border-left: solid 0.2rem var(--border-color);
+        border-top-width: 0;
+        padding: 0 0 0 2rem;
+      }
     }
   }
 }

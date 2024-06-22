@@ -15,7 +15,7 @@ export interface SkillsState {
 export default function Skills(): SkillsState {
   function readCurrentTag() {
     const usp = new URLSearchParams(window.location.search)
-    return usp.get('tag')
+    return usp.get('skill')
   }
 
   function updateVisibleSkills(this: SkillsState) {
@@ -61,10 +61,10 @@ export default function Skills(): SkillsState {
       e.preventDefault()
 
       if (tag === this.currentTag) {
-        window.history.pushState({ tag }, '', `${window.location.pathname}#skills`)
+        window.history.pushState({ tag }, '', window.location.pathname)
         this.currentTag = null
       } else {
-        window.history.pushState({ tag }, '', `${window.location.pathname}?tag=${tag}#skills`)
+        window.history.pushState({ tag }, '', `${window.location.pathname}?skill=${tag}`)
         this.currentTag = tag
       }
 
