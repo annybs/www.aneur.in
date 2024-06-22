@@ -207,6 +207,10 @@ main {
       @include tag(orangered, white);
     }
 
+    [data-tag="payments"] {
+      @include tag(orchid, black);
+    }
+
     [data-tag="php"] {
       @include tag(indigo, white);
     }

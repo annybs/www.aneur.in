@@ -1,10 +1,5 @@
 [
   {
-    "name": "Adobe Commerce (Magento 2)",
-    "tags": ["php", "js", "ecommerce", "framework", "platform"],
-    "description": "I have delivered beautiful and powerful Magento websites for boutique and major retailers, often developing complex integrations with other platforms."
-  },
-  {
     "name": "Adobe Illustrator",
     "tags": ["design"]
   },
@@ -183,6 +178,11 @@
     "description": "When Microsoft Office isn't available, or heaven forfend isn't working, LibreOffice fills the gap perfectly well and has a few tricks of its own. It's always good to have a backup plan."
   },
   {
+    "name": "Magento (Adobe Commerce)",
+    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "description": "I have delivered beautiful and powerful Magento websites for boutique and major retailers, often developing complex integrations with other platforms. I have experience with both Open Source and Commerce editions and was lead developer on one of the first Magento websites to launch on Commerce Cloud."
+  },
+  {
     "name": "MariaDB",
     "tags": ["database"],
     "description": "MariaDB is my go-to when I need a MySQL server for Magento or WordPress work. It's easy to set up, particularly in a Docker-enabled environment."
@@ -232,6 +232,11 @@
     "description": "I am a Node aficionado and I try to make the most of the expansive standard library, but when deadlines loom, there's a million packages on npm to speed things up a bit. Node apps are one of the quickest ways to get off the ground, particularly when transpiling from TypeScript."
   },
   {
+    "name": "PayPal",
+    "tags": ["payments", "platform"],
+    "description": "I have integrated PayPal for ecommerce using their plugins, primarily in Magento. I have also patched issues in earlier versions of the plugin for clients who had issues with payment creation."
+  },
+  {
     "name": "PHP",
     "tags": ["php", "language"],
     "description": "I have been with PHP since version 5.6 many years ago. While it hasn't completely shaken off its past, modern versions are much more approachable with better typing features and strong, structured OOP capabilities."
@@ -262,6 +267,11 @@
     "description": "I use a terminal every day in the course of my work, whether on my own system or in a remote SSH session. My hands-on experience managing servers supports my ability to implement CI/CD."
   },
   {
+    "name": "Shopify",
+    "tags": ["platform"],
+    "description": "I believe Shopify is an excellent, low-complexity option for small businesses who need an online shop. I am familiar with managing shops and marketing integrations, and have some experience with their APIs and templating system."
+  },
+  {
     "name": "Sketch",
     "tags": ["design"]
   },
@@ -274,6 +284,11 @@
     "name": "Strangler pattern",
     "tags": ["knowledge"],
     "description": "Businesses are made up of many moving parts, and sometimes parts need to be replaced. Software has to be able to follow suit, be it through interfaces and abstraction or the use of microservices. I can help make this happen."
+  },
+  {
+    "name": "Stripe",
+    "tags": ["payments", "platform"],
+    "description": "I have integrated Stripe into client systems both using plugins and manually using their excellent SDKs and APIs. Stripe is comfortably one of the best payment processors available in terms of developer experience."
   },
   {
     "name": "Tailwind CSS",
@@ -311,10 +326,12 @@
   },
   {
     "name": "WooCommerce",
-    "tags": ["php", "js", "ecommerce", "framework", "platform"]
+    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "description": "A solid option for small online shops that need a high degree of customisation without the cost of hosted solutions. I have built and maintained WooCommerce stores for several clients."
   },
   {
     "name": "WordPress",
-    "tags": ["php", "js", "ecommerce", "framework", "platform"]
+    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "description": "The granddaddy of CMS. Say what you will about coding in WordPress, but its versatility and huge variety of plugins has kept it relevant and viable for over two decades. I have extensive experience customising and integrating WordPress for a wide range of clients."
   }
 ]
