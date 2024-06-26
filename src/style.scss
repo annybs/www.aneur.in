@@ -131,8 +131,13 @@ li {
 main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+
+  @media (min-width: $bp-tablet) {
+    gap: 2rem;
+    padding: 2rem;
+  }
 }
 
 #top {
