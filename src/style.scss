@@ -239,8 +239,13 @@ main {
 
 #color {
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  right: 1rem;
+  top: 1rem;
+
+  @media (min-width: $bp-tablet) {
+    right: 2rem;
+    top: 2rem;
+  }
 
   button {
     background: none;
