@@ -5,9 +5,7 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aneurin Barker Snook</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link x-data="font" rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'" x-bind:href="url">
   </head>
   <body>
     <main>
@@ -19,7 +17,7 @@
           </h1>
         </header>
 
-        <p class="description">Software engineer extraordinaire</p>
+        <p><em>Software engineer extraordinaire</em></p>
 
         <p>I have been working with computers for over twenty years and love to solve technical and business problems for a fair price.</p>
         <p>

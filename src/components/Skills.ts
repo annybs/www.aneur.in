@@ -13,6 +13,8 @@ export interface SkillsState {
 }
 
 export default function Skills(): SkillsState {
+  const url = `//${document.location.host}/data/skills.json`
+
   function readCurrentTag() {
     const usp = new URLSearchParams(window.location.search)
     return usp.get('skill')
@@ -45,7 +47,7 @@ export default function Skills(): SkillsState {
       this.currentTag = tag
 
       try {
-        const res = await request.get(`//${document.location.host}/skills.json`)
+        const res = await request.get(url)
         this.skills = (res.json as Skill[]).sort((a, b) => a.name.localeCompare(b.name))
         updateVisibleSkills.apply(this)
       } catch (err) {

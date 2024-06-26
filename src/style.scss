@@ -2,6 +2,9 @@ $bp-tablet: 600px;
 $bp-desktop: 900px;
 $bp-super: 1200px;
 
+$font-weight: 400;
+$font-weight-bold: 700;
+
 $link-border-width: 0.2rem;
 
 @mixin prefer-light {
@@ -23,8 +26,9 @@ $link-border-width: 0.2rem;
 }
 
 :root {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Iosevka Custom', monospace;
   font-size: 12pt;
+  font-weight: 400;
 
   @include prefer-light;
 
@@ -71,7 +75,7 @@ a {
 
 h1 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   line-height: 1.4em;
   margin: 0;
   padding: 0;
@@ -79,7 +83,7 @@ h1 {
 
 h2 {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -87,7 +91,7 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -96,6 +100,14 @@ h3 {
 p {
   line-height: 1.5em;
   margin: 1rem 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
 }
 
 ul {
@@ -131,10 +143,6 @@ main {
     @media (min-width: $bp-desktop) {
       display: initial;
     }
-  }
-
-  .description {
-    font-style: italic;
   }
 }
 
