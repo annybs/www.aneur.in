@@ -23,7 +23,7 @@ $link-border-width: 0.2rem;
 }
 
 :root {
-  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 12pt;
 
   @include prefer-light;
