@@ -24,11 +24,13 @@
   },
   {
     "name": "Alpine.js",
+    "link": "https://alpinejs.dev",
     "tags": ["js", "framework"],
     "description": "A recent discovery that I find makes it very easy to build simple websites, like this one, without huge amounts of reactive boilerplate. I look forward to getting to know it better."
   },
   {
     "name": "Apache",
+    "link": "https://httpd.apache.org",
     "tags": ["framework"],
     "description": "I have set up many websites using PHP or JS using an Apache front proxy. I prefer nginx these days but Apache is easier to use in some respects."
   },
