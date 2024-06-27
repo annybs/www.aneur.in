@@ -54,6 +54,23 @@ body {
   }
 }
 
+@mixin button-icon($size: 2rem) {
+  background: none;
+  border: none;
+  color: var(--fg-color);
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  svg {
+    display: block;
+    fill: var(--fg-color);
+    height: 100%;
+    width: $size;
+  }
+}
+
 @mixin link($color: var(--cta-color)) {
   border-bottom: $link-border-width solid $color;
   color: $color;
@@ -238,7 +255,7 @@ main {
 }
 
 #color {
-  position: absolute;
+  position: fixed;
   right: 1rem;
   top: 1rem;
 
@@ -248,19 +265,6 @@ main {
   }
 
   button {
-    background: none;
-    border: none;
-    color: var(--fg-color);
-    cursor: pointer;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    svg {
-      display: block;
-      fill: var(--fg-color);
-      height: 100%;
-      width: 2rem;
-    }
+    @include button-icon;
   }
 }
