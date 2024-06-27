@@ -315,6 +315,11 @@
     "description": "Sometimes, often for privacy reasons, Google Analytics isn't the right choice for your organisation, but that doesn't mean you have to miss out on analytics. Umami is a strong, responsible, and open-source option for understanding your users' behaviour."
   },
   {
+    "name": "Vite",
+    "tags": ["js", "operations"],
+    "description": "Vite eliminates practically all of the complexity of frontend tooling and makes it incredibly easy to start, maintain, and build a web project. One of my favourite creations of recent years."
+  },
+  {
     "name": "Vue.js",
     "tags": ["js", "framework"],
     "description": "I have built numerous frontend applications in Vue 2 and 3. It is particularly enjoyable to create Vue SFCs since the introduction of Composition API and improvements in TypeScript support."
@@ -330,12 +335,12 @@
   },
   {
     "name": "WooCommerce",
-    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "tags": ["php", "ecommerce", "framework", "platform"],
     "description": "A solid option for small online shops that need a high degree of customisation without the cost of hosted solutions. I have built and maintained WooCommerce stores for several clients."
   },
   {
     "name": "WordPress",
-    "tags": ["php", "js", "ecommerce", "framework", "platform"],
+    "tags": ["php", "framework", "platform"],
     "description": "The granddaddy of CMS. Say what you will about coding in WordPress, but its versatility and huge variety of plugins has kept it relevant and viable for over two decades. I have extensive experience customising and integrating WordPress for a wide range of clients."
   }
 ]
