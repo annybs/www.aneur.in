@@ -1,5 +1,11 @@
-import { Skill } from '../types'
 import request, { ErrorResponse } from '@annybs/request-js'
+
+export interface Skill {
+  name: string
+  link?: string
+  tags: string[]
+  detail?: string
+}
 
 export interface SkillsState {
   currentTag: string | null
