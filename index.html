@@ -80,8 +80,10 @@
           <ul class="data">
             <template x-for="skill in visibleSkills">
               <li>
-                <header x-bind:title="`Tags: ${skill.tags.join(', ')}`">
-                  <h3 x-text="skill.name"></h3>
+                <header>
+                  <h3>
+                    <span x-bind:title="`Tags: ${skill.tags.join(', ')}`" x-text="skill.name"></span>
+                  </h3>
                 </header>
 
                 <p class="description" x-text="skill.description"></p>
