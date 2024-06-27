@@ -253,6 +253,8 @@ main {
     color: var(--fg-color);
     cursor: pointer;
     display: block;
+    margin: 0;
+    padding: 0;
 
     svg {
       display: block;
