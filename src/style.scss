@@ -123,6 +123,23 @@ li {
   line-height: 1.5rem;
 }
 
+button.icon {
+  background: none;
+  border: none;
+  color: var(--fg-color);
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  svg {
+    display: block;
+    fill: var(--fg-color);
+    height: 100%;
+    width: 2rem;
+  }
+}
+
 .cta {
   color: var(--cta-color);
   text-transform: uppercase;
@@ -201,6 +218,22 @@ main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
 
+      h3 a {
+        color: var(--fg-color);
+        border-width: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        svg {
+          width: 1rem;
+        }
+
+        &:hover {
+          color: var(--cta-color);
+        }
+      }
+
       .description {
         font-size: 0.8rem;
       }
@@ -245,22 +278,5 @@ main {
   @media (min-width: $bp-tablet) {
     right: 2rem;
     top: 2rem;
-  }
-
-  button {
-    background: none;
-    border: none;
-    color: var(--fg-color);
-    cursor: pointer;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    svg {
-      display: block;
-      fill: var(--fg-color);
-      height: 100%;
-      width: 2rem;
-    }
   }
 }
